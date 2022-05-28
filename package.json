@@ -1,0 +1,44 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "linkedin-profile-scraper": "^2.3.1",
+    "request": "^2.88.2",
+    "scraper-instagram": "^1.0.17"
+  },
+  "name": "portfolio",
+  "description": "My portfolio",
+  "version": "1.0.0",
+  "main": "parseInsta.js, parseLinked.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node parseInsta.js, node parseLinked.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuriy-kulakovskyi/Portfolio.git"
+  },
+  "keywords": [
+    "parse",
+    "Instagram",
+    "github",
+    "linkedin",
+    "portfolio",
+    "particles",
+    "html",
+    "css",
+    "javascript",
+    "node.js",
+    "scss",
+    "fs",
+    "instagram",
+    "scrapper",
+    "linkedin",
+    "scrapper"
+  ],
+  "author": "yuriy-kulakovskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuriy-kulakovskyi/Portfolio/issues"
+  },
+  "homepage": "https://github.com/yuriy-kulakovskyi/Portfolio#readme"
+}
