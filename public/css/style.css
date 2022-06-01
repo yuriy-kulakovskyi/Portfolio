@@ -1082,6 +1082,289 @@ canvas {
   transition: transform .4s ease, -webkit-transform .4s ease;
 }
 
+.wrapper .wrapper__contact {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 60px;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__header {
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__header .contact__header__title {
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 45px;
+  font-family: raleway, sans-serif;
+  font-weight: 500;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__header .contact__header__subtitle {
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 18px;
+  font-family: raleway, sans-serif;
+  font-weight: 500;
+  opacity: .9;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message {
+  width: 60%;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message .content__send-message__title {
+  color: #f5f5f5;
+  font-family: poppins, sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form .form__line {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form .form__line input {
+  width: 60%;
+  margin: 14px;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form input {
+  width: 60%;
+  background-color: #050505;
+  border: none;
+  border-radius: 8px;
+  margin: 24px;
+  color: #f5f5f5;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form textarea {
+  width: 60%;
+  height: 150px;
+  padding: 10px 20px;
+  margin: 15px;
+  border-radius: 8px;
+  outline: none;
+  background: #050505;
+  border: none;
+  color: whitesmoke;
+  font-family: poppins, sans-serif;
+  font-size: 18px;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form .submit-btn {
+  padding: 8px 24px;
+  text-transform: capitalize;
+  opacity: .8;
+  background-color: var(--contrast-color);
+  border: none;
+  border-radius: 8px;
+  font-family: poppins, sans-serif;
+  color: #f5f5f5;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form .submit-btn:hover {
+  opacity: 1;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info {
+  width: 40%;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info::before {
+  content: '';
+  background: url("../img/contact-back.jpg");
+  z-index: 1;
+  opacity: .4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__header {
+  position: relative;
+  z-index: 2;
+  font-size: 24px;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  color: #f5f5f5;
+  padding: 30px;
+  text-transform: capitalize;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__header .contact-info__header__title {
+  text-align: center;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__content {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 20px;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__content .contact-info__content__item {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__content .contact-info__content__item .contact__icon {
+  height: 40px;
+  width: 40px;
+  opacity: .8;
+  color: #fff;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__content .contact-info__content__item .contact-info__content__item__text {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-left: 20px;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__content .contact-info__content__item .contact-info__content__item__text .contact__text__title {
+  font-size: 15px;
+  opacity: .8;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__content .contact-info__content__item .contact-info__content__item__text .conatct__text__info {
+  font-size: 14px;
+  opacity: .7;
+  text-transform: capitalize;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__content .contact-info__content__item .contact-info__content__item__text .no-capitalize {
+  text-transform: none;
+}
+
 @media (max-width: 550px) {
   .wrapper .wrapper__header {
     -webkit-box-pack: end;
