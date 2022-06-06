@@ -25,7 +25,6 @@ fetch('https://api.github.com/users/yuriy-kulakovskyi/repos')
   return response.json();
 })
 .then((data) => {
-  console.log(data);
   $('#pelio__title').text(data[7].name);
   $('#pelio__descr').text(data[7].description);
   $('#pelio__link').attr('href', data[7].clone_url);
