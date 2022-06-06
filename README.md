@@ -9,7 +9,6 @@ npm i linkedin-profile-scraper
 And other tools which are important to install:
 ```
 npm i fs
-npm i request
 ```
 
 Parse social medias info using this commands:
