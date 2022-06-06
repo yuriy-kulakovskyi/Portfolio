@@ -18,3 +18,4 @@ node parseLinked.js
 ```
 
 *Created by Yurii Kulakovskyi*
+![image](https://user-images.githubusercontent.com/84936189/172244885-c6a561f6-a26f-4866-8b9d-510c91ecccc2.png)
