@@ -1876,15 +1876,28 @@ canvas {
   }
   .wrapper .wrapper__contact .wrapper__contact__content {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
   }
   .wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message {
+    margin-top: 30px;
     width: 100%;
   }
+  .wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form input,
+  .wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form textarea {
+    width: 90%;
+  }
+  .wrapper .wrapper__contact .wrapper__contact__content .contact__content__send-message form .form__line input {
+    width: 90%;
+  }
   .wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info {
+    margin-top: 30px;
     width: 100%;
+    height: 20%;
+  }
+  .wrapper .wrapper__contact .wrapper__contact__content .contact__content__contact-info .contact-info__header .contact-info__header__title {
+    font-size: 20px;
   }
 }
 

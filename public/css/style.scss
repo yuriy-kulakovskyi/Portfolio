@@ -1419,14 +1419,35 @@ canvas{
       }
 
       .wrapper__contact__content {
-        flex-flow: column;
+        flex-flow: column-reverse;
 
         .contact__content__send-message {
+          margin-top: 30px;
           width: 100%;
+
+          form {
+            input,
+            textarea {
+              width: 90%;
+            }
+
+            .form__line {
+              input {
+                width: 90%;
+              }
+            }
+          }
         }
 
         .contact__content__contact-info {
-          width: 100%;
+          margin-top: 30px;
+          width: 100%; height: 20%;
+
+          .contact-info__header {
+            .contact-info__header__title {
+              font-size: 20px;
+            }
+          }
         }
       }
     }
