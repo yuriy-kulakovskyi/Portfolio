@@ -262,3 +262,111 @@ $(".jquery-text").text(getFormatedStringFromDays(days(jquery_start, today)));
 $(".bootstrap-text").text(getFormatedStringFromDays(days(bootstrap_start, today)));
 $(".node-text").text(getFormatedStringFromDays(days(node_start, today)));
 $(".sass-text").text(getFormatedStringFromDays(days(sass_start, today)));
+
+
+
+
+// mouse move/leave on projects images
+let pelOneTimeout;
+let pelTwoTimeout;
+
+let startEye;
+let endEye;
+
+$("#pelio-image").mousemove(() => {
+  $("#pelio-image .eye").css('display', 'block');
+  $("#pelio-image .closed-eye").css('display', 'none');
+  startEye = () => {
+    $("#pelio-image .eye").css('display', 'none');
+    $("#pelio-image .closed-eye").css('display', 'block');
+    pelOneTimeout = setTimeout(() => {
+      endEye();
+    }, 1000);
+  }
+
+   endEye = () => {
+    $("#pelio-image .eye").css('display', 'block');
+    $("#pelio-image .closed-eye").css('display', 'none');
+    pelTwoTimeout = setTimeout(() => {
+      startEye();
+    }, 1000);
+  }
+  startEye();
+});
+
+
+$("#pelio-image").mouseleave(() => {
+  $("#pelio-image .eye").css('display', 'none');
+  $("#pelio-image .closed-eye").css('display', 'none');
+  clearTimeout(pelOneTimeout);
+  clearTimeout(pelTwoTimeout);
+  startEye = () => {  };
+  endEye = () => {  };
+});
+
+
+let weatherOneTimeOut;
+let weatherTwoTimeOut;
+
+$("#weather-image").mousemove(() => {
+  $("#weather-image .eye").css('display', 'block');
+  $("#weather-image .closed-eye").css('display', 'none');
+  startEye = () => {
+    $("#weather-image .eye").css('display', 'none');
+    $("#weather-image .closed-eye").css('display', 'block');
+    weatherOneTimeout = setTimeout(() => {
+      endEye();
+    }, 1000);
+  }
+
+  endEye = () => {
+    $("#weather-image .eye").css('display', 'block');
+    $("#weather-image .closed-eye").css('display', 'none');
+    weatherTwoTimeout = setTimeout(() => {
+      startEye();
+    }, 1000);
+  }
+  startEye();
+});
+
+$("#weather-image").mouseleave(() => {
+  $("#weather-image .eye").css('display', 'none');
+  $("#weather-image .closed-eye").css('display', 'none');
+  clearTimeout(weatherOneTimeOut);
+  clearTimeout(weatherTwoTimeOut);
+  startEye = () => {  };
+  endEye = () => {  };
+});
+
+let passOneTimeout;
+let passTwoTimeout;
+
+$("#password-image").mousemove(() => {
+  $("#password-image .eye").css('display', 'block');
+  $("#password-image .closed-eye").css('display', 'none');
+  startEye = () => {
+    $("#password-image .eye").css('display', 'none');
+    $("#password-image .closed-eye").css('display', 'block');
+    passOneTimeout = setTimeout(() => {
+      endEye();
+    }, 1000);
+  }
+
+  endEye = () => {
+    $("#password-image .eye").css('display', 'block');
+    $("#password-image .closed-eye").css('display', 'none');
+    passTwoTimeout = setTimeout(() => {
+      startEye();
+    }, 1000);
+  }
+  startEye();
+});
+
+$("#password-image").mouseleave(() => {
+  $("#password-image .eye").css('display', 'none');
+  $("#password-image .closed-eye").css('display', 'none');
+  clearTimeout(passOneTimeout);
+  clearTimeout(passTwoTimeout);
+  startEye = () => {  };
+  endEye = () => {  };
+});

@@ -1143,22 +1143,66 @@ canvas {
   background-position: center;
   -webkit-transition: .6s ease-in-out;
   transition: .6s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wrapper .wrapper__projects .projects__content .content__project .project__image:hover {
+.wrapper .wrapper__projects .projects__content .content__project .project__image img {
+  width: 10%;
+  height: 10%;
+  display: none;
+}
+
+.wrapper .wrapper__projects .projects__content .content__project .pelio::before {
+  content: "";
+  background-image: url("../img/pelio-bg.png");
+  position: absolute;
+  background-size: cover;
+  width: 40%;
+  height: 400px;
+  z-index: -1;
+  opacity: 1;
+}
+
+.wrapper .wrapper__projects .projects__content .content__project .pelio:hover::before {
   opacity: .4;
 }
 
-.wrapper .wrapper__projects .projects__content .content__project .pelio {
-  background-image: url("../img/pelio-bg.png");
-}
-
-.wrapper .wrapper__projects .projects__content .content__project .weather {
+.wrapper .wrapper__projects .projects__content .content__project .weather::before {
+  content: "";
   background-image: url("../img/weather-bg.png");
+  position: absolute;
+  background-size: cover;
+  width: 40%;
+  height: 400px;
+  z-index: -1;
+  opacity: 1;
 }
 
-.wrapper .wrapper__projects .projects__content .content__project .password {
+.wrapper .wrapper__projects .projects__content .content__project .weather:hover::before {
+  opacity: .4;
+}
+
+.wrapper .wrapper__projects .projects__content .content__project .password::before {
+  content: "";
   background-image: url("../img/password-bg.png");
+  position: absolute;
+  background-size: cover;
+  width: 40%;
+  height: 400px;
+  z-index: -1;
+  opacity: 1;
+}
+
+.wrapper .wrapper__projects .projects__content .content__project .password:hover::before {
+  opacity: .3;
 }
 
 .wrapper .wrapper__projects .projects__content .content__project .project__info {

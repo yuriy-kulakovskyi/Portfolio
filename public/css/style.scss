@@ -807,22 +807,62 @@ canvas{
           background-size: cover;
           background-position: center;
           transition: .6s ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-          &:hover {
-            opacity: .4;
+          img {
+            width: 10%; height: 10%;
+            display: none;
           }
         }
 
         .pelio {
-          background-image: url('../img/pelio-bg.png');
+          &::before {
+            content: "";
+            background-image: url('../img/pelio-bg.png');
+            position: absolute;
+            background-size: cover;
+            width: 40%; height: 400px;
+            z-index: -1;
+            opacity: 1;
+          }
+
+          &:hover::before {
+            opacity: .4;
+          }
         }
 
         .weather {
-          background-image: url('../img/weather-bg.png');
+          &::before {
+            content: "";
+            background-image: url('../img/weather-bg.png');
+            position: absolute;
+            background-size: cover;
+            width: 40%; height: 400px;
+            z-index: -1;
+            opacity: 1;
+          }
+
+          &:hover::before {
+            opacity: .4;
+          }
         }
 
         .password {
-          background-image: url('../img/password-bg.png');
+          &::before {
+            content: "";
+            background-image: url('../img/password-bg.png');
+            position: absolute;
+            background-size: cover;
+            width: 40%; height: 400px;
+            z-index: -1;
+            opacity: 1;
+          }
+
+          &:hover::before {
+            opacity: .3;
+          }
         }
 
         .project__info {
