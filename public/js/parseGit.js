@@ -25,17 +25,20 @@ fetch('https://api.github.com/users/yuriy-kulakovskyi/repos')
   return response.json();
 })
 .then((data) => {
-  $('#pelio__title').text(data[6].name);
-  $('#pelio__descr').text(data[6].description);
-  $('#pelio__link').attr('href', data[6].homepage);
+  $('#pelio__title').text(data[7].name);
+  $('#pelio__descr').text(data[7].description);
+  $('#pelio__link').attr('href', data[7].clone_url);
+  $('#pelio-image').attr('href', data[7].homepage);
 
-  $('#weather__title').text(data[13].name);
-  $('#weather__descr').text(data[13].description);
-  $('#weather__link').attr('href', data[13].homepage);
+  $('#weather__title').text(data[14].name);
+  $('#weather__descr').text(data[14].description);
+  $('#weather__link').attr('href', data[14].clone_url);
+  $('#weather-image').attr('href', data[14].homepage);
 
-  $('#password__title').text(data[3].name);
-  $('#password__descr').text(data[3].description);
-  $('#password__link').attr('href', data[3].homepage);
+  $('#password__title').text(data[4].name);
+  $('#password__descr').text(data[4].description);
+  $('#password__link').attr('href', data[4].clone_url);
+  $('#password-image').attr('href', data[4].homepage);
 })
 
 fetch('https://api.github.com/users/yuriy-kulakovskyi')

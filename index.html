@@ -8,6 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
 
+  <!-- shortcut icon -->
+  <link rel="shortcut icon" href="public/img/portfolio-svgrepo-com.svg">
+
   <!-- css link  -->
   <link rel="stylesheet" href="public/css/style.css">
 
@@ -25,8 +28,44 @@
 </head>
 
 <body>
+  <!-- loader start -->
+  <div class="loader" id="loader">
+    <h1 class="loader__title" id="loader-text">yurii kulakovskyi</h1>
+  </div>
+  <!-- loader end -->
+
   <!-- Wrapper for page -->
   <div class="wrapper" id="wrapper">
+    <div class="colors-settings" id="colors-settings">
+      <div class="color-panel">
+        <i data-feather="settings"></i>
+      </div>
+      <div class="color-selector">
+        <h1 class="selector__title">cutom colors</h1>
+        <div class="selector__colors">
+          <ul>
+            <li>
+              <div class="selector__colors__color red" id="selector__red"></div>
+            </li>
+            <li>
+              <div class="selector__colors__color purple" id="selector__purple"></div>
+            </li>
+            <li>
+              <div class="selector__colors__color malt" id="selector__malt"></div>
+            </li>
+            <li>
+              <div class="selector__colors__color green" id="selector__green"></div>
+            </li>
+            <li>
+              <div class="selector__colors__color blue" id="selector__blue"></div>
+            </li>
+            <li>
+              <div class="selector__colors__color orange" id="selector__orange"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <header class="wrapper__header" id="wrapper__header">
       <div class="header__logo" id="header__logo">portf<span class="post color">olio.</span></div>
       <div class="header__menu-button" id="header__menu-button">
@@ -37,7 +76,7 @@
     </header>
     <div class="wrapper__menu" id="wrapper__menu">
       <header class="menu__header" id="menu__header">
-        <div class="header__logo" id="header__logo">portf<span class="post">olio.</span></div>
+        <div class="header__logo" id="header__logo">portf<span class="post color">olio.</span></div>
         <div class="logo__box" id="logo__box">
           <div class="header__cross" id="header__cross">
             <span class="close-first"></span>
@@ -112,7 +151,7 @@
                 <div class="skill-text">HTML/CSS</div>
                 <div class="progress">
                   <div class="skill-progress html-progress">
-                    <div class="progress-text html-text">95%</div>
+                    <div class="progress-text html-text"></div>
                   </div>
                 </div>
               </div>
@@ -120,7 +159,7 @@
                 <div class="skill-text">JavaScript</div>
                 <div class="progress">
                   <div class="skill-progress js-progress">
-                    <div class="progress-text js-text">70%</div>
+                    <div class="progress-text js-text"></div>
                   </div>
                 </div>
               </div>
@@ -128,7 +167,7 @@
                 <div class="skill-text">jQuery</div>
                 <div class="progress">
                   <div class="skill-progress jquery-progress">
-                    <div class="progress-text jquery-text">65%</div>
+                    <div class="progress-text jquery-text"></div>
                   </div>
                 </div>
               </div>
@@ -138,7 +177,7 @@
                 <div class="skill-text">Bootstrap</div>
                 <div class="progress">
                   <div class="skill-progress bootstrap-progress">
-                    <div class="progress-text bootstrap-text">70%</div>
+                    <div class="progress-text bootstrap-text"></div>
                   </div>
                 </div>
               </div>
@@ -146,7 +185,7 @@
                 <div class="skill-text">Node.js</div>
                 <div class="progress">
                   <div class="skill-progress node-progress">
-                    <div class="progress-text node-text">30%</div>
+                    <div class="progress-text node-text"></div>
                   </div>
                 </div>
               </div>
@@ -154,7 +193,7 @@
                 <div class="skill-text">SASS</div>
                 <div class="progress">
                   <div class="skill-progress progress sass-progress">
-                    <div class="progress-text sass-text">50%</div>
+                    <div class="progress-text sass-text"></div>
                   </div>
                 </div>
               </div>
@@ -171,7 +210,6 @@
         <h1 class="social-medias__header__title">social medias</h1>
         <h1 class="social-medias__header__subtitle">find me in <span class="color">social medias</span></h1>
       </div>
-
       <div class="social-medias__content">
         <div class="social-medias__content__github item">
           <div class="image" id="github__image"></div>
@@ -219,7 +257,7 @@
       </div>
       <div class="projects__content">
         <div class="content__project">
-          <div class="project__image pelio"></div>
+          <a target="_blank" id="pelio-image" class="project__image pelio"></a>
           <div class="project__info">
             <h1 class="project__info__title" id="pelio__title"></h1>
             <p class="project__info__description" id="pelio__descr"></p>
@@ -227,7 +265,7 @@
           </div>
         </div>
         <div class="content__project">
-          <div class="project__image weather"></div>
+          <a target="_blank" id="weather-image" class="project__image weather"></a>
           <div class="project__info">
             <h1 class="project__info__title" id="weather__title"></h1>
             <p class="project__info__description" id="weather__descr"></p>
@@ -235,7 +273,7 @@
           </div>
         </div>
         <div class="content__project">
-          <div class="project__image password"></div>
+          <a target="_blank" id="password-image" class="project__image password"></a>
           <div class="project__info">
             <h1 class="project__info__title" id="password__title"></h1>
             <p class="project__info__description" id="password__descr"></p>
@@ -323,6 +361,9 @@
 
   <!-- formspree hide alert -->
   <script src="public/js/form.js"></script>
+
+  <!-- loader.js -->
+  <script src="public/js/loader.js"></script>
 </body>
 
 </html>

@@ -21,6 +21,7 @@ $("#logo__box").click(() => {
   $("#wrapper__menu").css('top', '-100vh');
   $('#menu__header').css('top', '-100px');
   $('#wrapper__home').css('display', 'flex');
+  $("#colors-settings").css("display", 'none');
 });
 
 // Links hovers
@@ -101,10 +102,12 @@ $("#home").click(() => {
   $("#wrapper__home").css("display", "flex");
   $("#wrapper__social-medias").css("display", "none");
   $("#wrapper__projects").css("display", "none");
+  $("#wrapper__contact").css("display", "none");
   $("#wrapper section").css("animation", 'none');
   $("#wrapper__menu").css('top', '-100vh');
   $('#menu__header').css('top', '-100px');
   $(".overlay").css("display", 'block');
+  $("#colors-settings").css("display", 'none');
 
   setTimeout(() => {
     $("#wrapper section").css("animation", 'expand .8s ease forwards');
@@ -117,10 +120,12 @@ $("#about").click(() => {
   $("#wrapper__about").css("display", "flex");
   $("#wrapper__social-medias").css("display", "none");
   $("#wrapper__projects").css("display", "none");
+  $("#wrapper__contact").css("display", "none");
   $("#wrapper section").css("animation", 'none');
   $("#wrapper__menu").css('top', '-100vh');
   $('#menu__header').css('top', '-100px');
   $(".overlay").css("display", 'block');
+  $("#colors-settings").css("display", 'flex');
 
   setTimeout(() => {
     $("#wrapper section").css("animation", 'expand .8s ease forwards');
@@ -133,10 +138,12 @@ $("#social-medias").click(() => {
   $("#wrapper__about").css("display", "none");
   $("#wrapper__social-medias").css("display", "flex");
   $("#wrapper__projects").css("display", "none");
+  $("#wrapper__contact").css("display", "none");
   $("#wrapper section").css("animation", 'none');
   $("#wrapper__menu").css('top', '-100vh');
   $('#menu__header').css('top', '-100px');
   $(".overlay").css("display", 'block');
+  $("#colors-settings").css("display", 'flex');
 
   setTimeout(() => {
     $("#wrapper section").css("animation", 'expand .8s ease forwards');
@@ -149,13 +156,109 @@ $("#projects").click(() => {
   $("#wrapper__about").css("display", "none");
   $("#wrapper__social-medias").css("display", "none");
   $("#wrapper__projects").css("display", "flex");
+  $("#wrapper__contact").css("display", "none");
   $("#wrapper section").css("animation", 'none');
   $("#wrapper__menu").css('top', '-100vh');
   $('#menu__header').css('top', '-100px');
   $(".overlay").css("display", 'block');
+  $("#colors-settings").css("display", 'flex');
 
   setTimeout(() => {
     $("#wrapper section").css("animation", 'expand .8s ease forwards');
   }, 100);
 
 });
+
+$("#contact").click(() => {
+  $("#wrapper__home").css("display", "none");
+  $("#wrapper__about").css("display", "none");
+  $("#wrapper__social-medias").css("display", "none");
+  $("#wrapper__projects").css("display", "none");
+  $("#wrapper__contact").css("display", "flex");
+  $("#wrapper section").css("animation", 'none');
+  $("#wrapper__menu").css('top', '-100vh');
+  $('#menu__header').css('top', '-100px');
+  $(".overlay").css("display", 'block');
+  $("#colors-settings").css("display", 'none');
+
+  setTimeout(() => {
+    $("#wrapper section").css("animation", 'expand .8s ease forwards');
+  }, 100);
+
+});
+
+
+// Change color style of page
+
+let sClick = false;
+$("#colors-settings").click(() => {
+  if (!sClick) {
+    sClick = true;
+    $('#colors-settings').css('right', '0');
+  } else {
+    sClick = false;
+    $('#colors-settings').css('right', '-150px');
+  }
+});
+
+$("#selector__red").click(() => {
+  $("body").get(0).style.setProperty("--contrast-color", "#c70039");
+});
+
+$("#selector__purple").click(() => {
+  $("body").get(0).style.setProperty("--contrast-color", "#481380");
+});
+
+$("#selector__malt").click(() => {
+  $("body").get(0).style.setProperty("--contrast-color", "#00909e");
+});
+
+$("#selector__green").click(() => {
+  $("body").get(0).style.setProperty("--contrast-color", "#04A777");
+});
+
+$("#selector__blue").click(() => {
+  $("body").get(0).style.setProperty("--contrast-color", "#035aa6");
+});
+
+$("#selector__orange").click(() => {
+  $("body").get(0).style.setProperty("--contrast-color", "#dd7631");
+});
+
+
+let html_start = new Date('10/4/2020');
+let js_start = new Date('12/6/2020');
+let jquery_start = new Date('03/14/2021');
+let bootstrap_start = new Date('10/10/2020');
+let node_start = new Date('7/12/2021');
+let sass_start = new Date('8/6/2021');
+
+let today = new Date();
+
+const days = (html_start, today) =>{
+  let difference = today.getTime() - html_start.getTime();
+  let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+  return TotalDays;
+}
+
+
+function getFormatedStringFromDays(numberOfDays) {
+  var years = Math.floor(numberOfDays / 365);
+  var months = Math.floor(numberOfDays % 365 / 30);
+  if (years > 1) {
+    return years + ' years ' + months + ' months'
+  } else if (years === 1) {
+    return years + ' year ' + months + ' months'
+  } else if (years < 1) {
+    return months + ' months'
+  }
+
+}
+
+// Skills section text
+$(".html-text").text(getFormatedStringFromDays(days(html_start, today)));
+$(".js-text").text(getFormatedStringFromDays(days(js_start, today)));
+$(".jquery-text").text(getFormatedStringFromDays(days(jquery_start, today)));
+$(".bootstrap-text").text(getFormatedStringFromDays(days(bootstrap_start, today)));
+$(".node-text").text(getFormatedStringFromDays(days(node_start, today)));
+$(".sass-text").text(getFormatedStringFromDays(days(sass_start, today)));
