@@ -251,6 +251,7 @@ canvas {
 .wrapper section {
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
+  overflow-y: hidden;
 }
 
 .wrapper .wrapper__menu {
