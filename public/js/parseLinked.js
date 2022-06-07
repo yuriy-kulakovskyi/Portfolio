@@ -50,6 +50,7 @@ const fs = require('fs');
     let firmname = result.userProfile.title;
 
     fs.writeFileSync('parseLinkedinfo.js', `$("#linkedin__image").css("background-image", "url(${photo})");
+$("#instagram__image").css("background-image", "url(${photo})");
 $("#nickname").text('${nickname}');
 $("#username").text('Yuriy Kulakovskyi');
 $("#connections").text("${connections}");

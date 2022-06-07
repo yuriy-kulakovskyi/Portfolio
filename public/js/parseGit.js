@@ -11,7 +11,6 @@ fetch('https://api.github.com/users/yuriy-kulakovskyi')
   let photo = data.avatar_url;
 
   $("#github__image").css("background-image", 'url('+photo+')');
-  $("#instagram__image").css("background-image", 'url('+photo+')');
   $(".github__link").attr("href", data.html_url);
   $("#github__username").text(username);
   $("#github__nickname").text(nickname);
@@ -54,7 +53,6 @@ fetch('https://api.github.com/users/yuriy-kulakovskyi')
   let photo = data.avatar_url;
 
   $("#github__image").css("background-image", 'url('+photo+')');
-  $("#instagram__image").css("background-image", 'url('+photo+')');
   $(".github__link").attr("href", data.html_url);
   $("#github__username").text(username);
   $("#github__nickname").text(nickname);
