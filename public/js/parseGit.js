@@ -38,7 +38,7 @@ fetch('https://api.github.com/users/yuriy-kulakovskyi/repos')
   $('#password__title').text(data[15].name);
   $('#password__descr').text(data[15].description);
   $('#password__link').attr('href', data[15].clone_url);
-  $('#password-image').attr('href', data[15].homepage);
+  $('#password-image').attr('href', data[15].clone_url);
 })
 
 fetch('https://api.github.com/users/yuriy-kulakovskyi')
