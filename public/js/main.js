@@ -100,7 +100,7 @@ $("#contact").mouseleave(() => {
 $("#home").click(() => {
   $("#wrapper__about").css("display", "none");
   $("#wrapper__home").css("display", "flex");
-  $("#wrapper__social-medias").css("display", "none");
+  $("#wrapper__social-media").css("display", "none");
   $("#wrapper__projects").css("display", "none");
   $("#wrapper__contact").css("display", "none");
   $("#wrapper section").css("animation", 'none');
@@ -118,7 +118,7 @@ $("#home").click(() => {
 $("#about").click(() => {
   $("#wrapper__home").css("display", "none");
   $("#wrapper__about").css("display", "flex");
-  $("#wrapper__social-medias").css("display", "none");
+  $("#wrapper__social-media").css("display", "none");
   $("#wrapper__projects").css("display", "none");
   $("#wrapper__contact").css("display", "none");
   $("#wrapper section").css("animation", 'none');
@@ -133,10 +133,10 @@ $("#about").click(() => {
 
 });
 
-$("#social-medias").click(() => {
+$("#social-media").click(() => {
   $("#wrapper__home").css("display", "none");
   $("#wrapper__about").css("display", "none");
-  $("#wrapper__social-medias").css("display", "flex");
+  $("#wrapper__social-media").css("display", "flex");
   $("#wrapper__projects").css("display", "none");
   $("#wrapper__contact").css("display", "none");
   $("#wrapper section").css("animation", 'none');
@@ -154,7 +154,7 @@ $("#social-medias").click(() => {
 $("#projects").click(() => {
   $("#wrapper__home").css("display", "none");
   $("#wrapper__about").css("display", "none");
-  $("#wrapper__social-medias").css("display", "none");
+  $("#wrapper__social-media").css("display", "none");
   $("#wrapper__projects").css("display", "flex");
   $("#wrapper__contact").css("display", "none");
   $("#wrapper section").css("animation", 'none');
@@ -172,7 +172,7 @@ $("#projects").click(() => {
 $("#contact").click(() => {
   $("#wrapper__home").css("display", "none");
   $("#wrapper__about").css("display", "none");
-  $("#wrapper__social-medias").css("display", "none");
+  $("#wrapper__social-media").css("display", "none");
   $("#wrapper__projects").css("display", "none");
   $("#wrapper__contact").css("display", "flex");
   $("#wrapper section").css("animation", 'none');

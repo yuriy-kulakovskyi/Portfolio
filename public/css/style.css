@@ -893,7 +893,7 @@ canvas {
   width: 100%;
 }
 
-.wrapper .wrapper__social-medias {
+.wrapper .wrapper__social-media {
   width: 100%;
   min-height: 100vh;
   background-color: #101010;
@@ -909,13 +909,13 @@ canvas {
           flex-flow: column;
 }
 
-.wrapper .wrapper__social-medias .social-medias__header {
+.wrapper .wrapper__social-media .social-media__header {
   width: 100%;
   height: 100px;
 }
 
-.wrapper .wrapper__social-medias .social-medias__header .social-medias__header__title,
-.wrapper .wrapper__social-medias .social-medias__header .social-medias__header__subtitle {
+.wrapper .wrapper__social-media .social-media__header .social-media__header__title,
+.wrapper .wrapper__social-media .social-media__header .social-media__header__subtitle {
   text-align: center;
   text-transform: capitalize;
   color: #f5f5f5;
@@ -923,16 +923,16 @@ canvas {
   font-weight: 400;
 }
 
-.wrapper .wrapper__social-medias .social-medias__header .social-medias__header__title {
+.wrapper .wrapper__social-media .social-media__header .social-media__header__title {
   font-size: 45px;
 }
 
-.wrapper .wrapper__social-medias .social-medias__header .social-medias__header__subtitle {
+.wrapper .wrapper__social-media .social-media__header .social-media__header__subtitle {
   font-size: 20px;
   opacity: .7;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content {
+.wrapper .wrapper__social-media .social-media__content {
   width: 100%;
   height: 50vh;
   display: -webkit-box;
@@ -945,7 +945,7 @@ canvas {
           align-items: center;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item {
+.wrapper .wrapper__social-media .social-media__content .item {
   width: 30%;
   height: 100%;
   -webkit-box-shadow: 0 0 12px #333;
@@ -967,7 +967,7 @@ canvas {
   padding: 20px;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .image {
+.wrapper .wrapper__social-media .social-media__content .item .image {
   width: 70px;
   height: 70px;
   border-radius: 100%;
@@ -977,7 +977,7 @@ canvas {
   background-position: center;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content {
+.wrapper .wrapper__social-media .social-media__content .item .content {
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -995,14 +995,14 @@ canvas {
           flex-flow: column;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .username {
+.wrapper .wrapper__social-media .social-media__content .item .content .username {
   font-size: 24px;
   color: #fff;
   opacity: .7;
   font-family: montserrat;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .nickname {
+.wrapper .wrapper__social-media .social-media__content .item .content .nickname {
   font-size: 20px;
   color: #fff;
   opacity: .3;
@@ -1010,8 +1010,8 @@ canvas {
   font-family: montserrat;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .bio,
-.wrapper .wrapper__social-medias .social-medias__content .item .content .firmname {
+.wrapper .wrapper__social-media .social-media__content .item .content .bio,
+.wrapper .wrapper__social-media .social-media__content .item .content .firmname {
   font-size: 18px;
   color: #fff;
   opacity: .8;
@@ -1019,11 +1019,11 @@ canvas {
   text-align: center;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .connections {
+.wrapper .wrapper__social-media .social-media__content .item .content .connections {
   color: #0a66c2;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .row {
+.wrapper .wrapper__social-media .social-media__content .item .content .row {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1032,13 +1032,13 @@ canvas {
       justify-content: space-around;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .row .followers,
-.wrapper .wrapper__social-medias .social-medias__content .item .content .row .following {
+.wrapper .wrapper__social-media .social-media__content .item .content .row .followers,
+.wrapper .wrapper__social-media .social-media__content .item .content .row .following {
   font-family: montserrat;
   color: #8b949e;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .link {
+.wrapper .wrapper__social-media .social-media__content .item .content .link {
   text-decoration: none;
   background-color: var(--contrast-color);
   color: #f5f5f5;
@@ -1055,13 +1055,13 @@ canvas {
           align-items: center;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .link svg {
+.wrapper .wrapper__social-media .social-media__content .item .content .link svg {
   width: 15px;
   height: 15px;
   margin-right: 10px;
 }
 
-.wrapper .wrapper__social-medias .social-medias__content .item .content .link:hover {
+.wrapper .wrapper__social-media .social-media__content .item .content .link:hover {
   background-color: #f5f5f5;
   color: var(--contrast-color);
 }

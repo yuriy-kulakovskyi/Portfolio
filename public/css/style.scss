@@ -631,7 +631,7 @@ canvas{
     }
   }
 
-  .wrapper__social-medias {
+  .wrapper__social-media {
     width: 100%; min-height: 100vh;
     background-color: #101010;
     display: none;
@@ -639,11 +639,11 @@ canvas{
     align-items: center;
     flex-flow: column;
 
-    .social-medias__header {
+    .social-media__header {
       width: 100%; height: 100px;
 
-      .social-medias__header__title,
-      .social-medias__header__subtitle {
+      .social-media__header__title,
+      .social-media__header__subtitle {
         text-align: center;
         text-transform: capitalize;
         color: #f5f5f5;
@@ -651,17 +651,17 @@ canvas{
         font-weight: 400;
       }
 
-      .social-medias__header__title {
+      .social-media__header__title {
         font-size: 45px;
       }
 
-      .social-medias__header__subtitle {
+      .social-media__header__subtitle {
         font-size: 20px;
         opacity: .7;
       }
     }
 
-    .social-medias__content {
+    .social-media__content {
       width: 100%; height: 50vh;
       display: flex;
       justify-content: space-around;
