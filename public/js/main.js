@@ -53,14 +53,14 @@ $("#about").mouseleave(() => {
   $("#linkVal").css("transform", "translate(-50%,-50%)");
 });
 
-$("#social-medias").mousemove(() => {
-  $("#linkVal").text('social medias');
+$("#social-media").mousemove(() => {
+  $("#linkVal").text('social media');
   $("#linkVal").css("opacity", "1");
   $("#linkVal").css("letter-spacing", "10px");
   $("#linkVal").css("transform", "");
 });
 
-$("#social-medias").mouseleave(() => {
+$("#social-media").mouseleave(() => {
   $("#linkVal").text('');
   $("#linkVal").css("opacity", "0");
   $("#linkVal").css("letter-spacing", "100px");
