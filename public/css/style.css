@@ -279,6 +279,7 @@ canvas {
 
 .wrapper .wrapper__menu .link__val {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
