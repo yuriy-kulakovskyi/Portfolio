@@ -1328,7 +1328,7 @@ canvas{
             }
             
             .content {
-              height: 80%;
+              height: 70%;
               justify-content: space-between;
             }
 
@@ -1351,15 +1351,15 @@ canvas{
           }
 
           @media (max-height: 900px) {
-            width: 100%;
+            width: 90%;
 
             .image {
               width: 50px; height: 50px;
             }
             
             .content {
-              height: 50%;
-              justify-content: center;
+              height: 60%;
+              justify-content: space-between;
             }
 
             .nickname {
@@ -1387,6 +1387,12 @@ canvas{
           @media (max-height: 500px) {
             .image {
               display: none;
+            }
+          }
+
+          @media (max-height: 755px) {
+            .content {
+              height: 80%;
             }
           }
         }
