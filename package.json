@@ -9,7 +9,6 @@
   "description": "My portfolio",
   "version": "1.0.0",
   "main": "parseInsta.js, parseLinked.js",
-  "devDependencies": {},
   "scripts": {
     "test": "node parseInsta.js, node parseLinked.js"
   },
