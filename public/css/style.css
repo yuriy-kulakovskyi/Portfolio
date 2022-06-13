@@ -977,6 +977,10 @@ canvas {
   background-position: center;
 }
 
+.wrapper .wrapper__social-media .social-media__content .item #instagram__image {
+  background-image: url("../img/insta.jpg");
+}
+
 .wrapper .wrapper__social-media .social-media__content .item .content {
   width: 100%;
   height: 70%;
