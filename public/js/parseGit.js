@@ -25,20 +25,20 @@ fetch('https://api.github.com/users/yuriy-kulakovskyi/repos')
 })
 .then((data) => {
   console.log(data);
-  $('#pelio__title').text(data[7].name);
-  $('#pelio__descr').text(data[7].description);
-  $('#pelio__link').attr('href', data[7].clone_url);
-  $('#pelio-image').attr('href', data[7].homepage);
+  $('#pelio__title').text(data[8].name);
+  $('#pelio__descr').text(data[8].description);
+  $('#pelio__link').attr('href', data[8].clone_url);
+  $('#pelio-image').attr('href', data[8].homepage);
 
-  $('#weather__title').text(data[17].name);
-  $('#weather__descr').text(data[17].description);
-  $('#weather__link').attr('href', data[17].clone_url);
-  $('#weather-image').attr('href', data[17].homepage);
+  $('#weather__title').text(data[19].name);
+  $('#weather__descr').text(data[19].description);
+  $('#weather__link').attr('href', data[19].clone_url);
+  $('#weather-image').attr('href', data[19].homepage);
 
-  $('#password__title').text(data[18].name);
-  $('#password__descr').text(data[18].description);
-  $('#password__link').attr('href', data[18].clone_url);
-  $('#password-image').attr('href', data[18].clone_url);
+  $('#password__title').text(data[20].name);
+  $('#password__descr').text(data[20].description);
+  $('#password__link').attr('href', data[20].clone_url);
+  $('#password-image').attr('href', data[20].clone_url);
 })
 
 fetch('https://api.github.com/users/yuriy-kulakovskyi')
