@@ -4,7 +4,7 @@ const fs = require('fs');
 (async() => {
   try {
     const scraper = new LinkedInProfileScraper({
-      sessionCookieValue: 'AQEDATYQk1MDCtz2AAABgI7bxDIAAAGAsuhIMk4AVLdqUpa-PAItbkQCA0yCh1KnYqyymr1ZmCk4Pw17gS56WwUwFF6jgCeBggiDDyWeLO7WqPr_8J42UjNIjFd4bzM4txNDNGYz-CTIElRDiG8q6XRs'
+      sessionCookieValue: ''
     });
  
     await scraper.setup()
