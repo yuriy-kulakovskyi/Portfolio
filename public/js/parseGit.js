@@ -50,7 +50,7 @@ fetch('https://api.github.com/users/yuriy-kulakovskyi/repos')
   $('#weather__link').attr('href', data.find(tita).clone_url);
   $('#weather-image').attr('href', data.find(tita).homepage);
 
-  data.find(tita).topics.slice(0, 5).map(i => {
+  data.find(tita).topics.slice(0, 3).map(i => {
     $("#weather__topics").append(`<span>${i}</span>`);
   })
 
